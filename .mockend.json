@@ -1,14 +1,7 @@
 {
-    "Todo": [
-      {
-        "id": 2,
-        "task": "beat the hell outta sandman",
-        "status": true
-      },
-      {
-        "task": "Get some hamburgers",
-        "id": 7109,
-        "status": true
+    "Todo": {
+        "id": "int",
+        "task": "string",
+        "status": "boolean"
       }
-    ]
   }
