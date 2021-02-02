@@ -1,4 +1,5 @@
 import Nav from './Nav'
+import { Form } from './Styled/styled.js'
 import { useHistory } from 'react-router-dom'
 
 
@@ -32,13 +33,15 @@ return (
   <div style={{padding : '1rem .5rem'}}>
     <Nav></Nav> 
     <form onSubmit={(e) => handleSubmit(e, task)}>
-      <h3>add todo</h3>
-      <div>
-      <input type="text" onChange={handleChange} />
-      </div>
-      <div>
-        <input type="submit" value="add" />
-      </div>
+      <Form>
+        <h3>add todo</h3>
+        <div>
+        <input type="text" onChange={handleChange} />
+        </div>
+        <div>
+          <input type="submit" value="add" />
+        </div>
+      </Form>
     </form>
   </div>
   );

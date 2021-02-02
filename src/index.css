@@ -20,7 +20,7 @@ span.status{
   display: block;
 }
 
-form{
+/* form{
   width: 80;
   margin: 2rem auto;
   display: grid;
@@ -61,7 +61,7 @@ form div input[type=submit]{
   border: 0;
   text-transform: capitalize;
   text-align: center;
-}
+} */
 #root{
   position: relative;
 }

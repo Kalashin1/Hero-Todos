@@ -18,7 +18,7 @@ const Todos = () => {
 
   const update = async function(obj){
     obj.status = !obj.status
-    const res = await fetch('http://localhost:8080/todos/'+obj.id, {
+    const res = await fetch('https://jsonplaceholder.typicode.com/todos/'+obj.id, {
       method: 'PUT',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(obj)
@@ -28,7 +28,7 @@ const Todos = () => {
     }
   }
   
-  const {data, error, isPending } = useFetch('http://localhost:8080/todos')
+  const {data, error, isPending } = useFetch('https://jsonplaceholder.typicode.com/todos')
   console.log(data)
   return ( 
     <TaskList>
