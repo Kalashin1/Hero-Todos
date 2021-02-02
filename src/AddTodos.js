@@ -17,7 +17,7 @@ const AddTodo = () => {
     let status = false
 
     let newTodo = { task :item, id, status }
-    fetch('http://localhost:8080/todos', {
+    fetch('https://universal-substantial-tamarind.glitch.me/todos', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(newTodo)

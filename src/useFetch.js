@@ -14,7 +14,7 @@ const useFetch = (url) => {
         throw Error('error fetching resource '+ res.status)
       }
     }).then( data => {
-      setData(data)
+      setData(data.slice(0, 4))
       setIsPending(false)
     }).catch(err => {
       setError(err.message)

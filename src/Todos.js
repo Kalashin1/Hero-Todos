@@ -9,8 +9,8 @@ const Todos = () => {
   const history = useHistory()
 
   const del = function(obj){
-    fetch('http://localhost:8080/todos/'+obj.id, {
-    method: 'DELETE',
+    fetch('https://universal-substantial-tamarind.glitch.me/todos/delete/'+obj.id, {
+    method: 'GET',
   }).then(res => {
     history.go(0)
   })
@@ -18,8 +18,8 @@ const Todos = () => {
 
   const update = async function(obj){
     obj.status = !obj.status
-    const res = await fetch('https://jsonplaceholder.typicode.com/todos/'+obj.id, {
-      method: 'PUT',
+    const res = await fetch('https://universal-substantial-tamarind.glitch.me/todo/update'+obj.id, {
+      method: 'GET',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(obj)
     })
@@ -28,7 +28,7 @@ const Todos = () => {
     }
   }
   
-  const {data, error, isPending } = useFetch('https://mockend.com/Kalashin1/Hero-Todos/todos')
+  const {data, error, isPending } = useFetch('https://universal-substantial-tamarind.glitch.me/todos')
   console.log(data)
   return ( 
     <TaskList>
