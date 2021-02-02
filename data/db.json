@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 2,
+      "task": "beat the hell outta sandman",
+      "status": false
+    },
+    {
+      "id": 4,
+      "task": "turn a truck to a weapon system",
+      "status": true
+    },
+    {
+      "task": "Get some hamburgers",
+      "id": 7109,
+      "status": false
+    }
+  ]
+}

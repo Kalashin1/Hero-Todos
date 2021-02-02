@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+span.status{
+  width: 20px;
+  height: 20px;
+  /* background: red; */
+  border-radius: 50%;
+  display: block;
+}
+
+form{
+  width: 80;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+form h3{
+  text-align: center;
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+
+form div input[type=text]{
+  width: 90%;
+  padding: 16px 6px;
+  color: darkblue;
+  background: #f2f2f2;
+  border-radius: .7rem;
+  border: 0;
+  outline: 0;
+}
+
+form div{
+  display: flex;
+  margin: 1rem;;
+  justify-content: center;
+  align-items: center;
+}
+
+form div input[type=submit]{
+  padding: 12px 26px;
+  background: darkblue;
+  color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  outline: 0;
+  cursor: pointer;
+  border: 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+#root{
+  position: relative;
+}
+
+a span:nth-child(3){
+  text-align: left;
+}
+
+span.status.false{
+  background: red;
+}
+.true{
+  background: green;
+}
