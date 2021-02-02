@@ -28,7 +28,7 @@ const Todos = () => {
     }
   }
   
-  const {data, error, isPending } = useFetch('https://jsonplaceholder.typicode.com/todos')
+  const {data, error, isPending } = useFetch('https://mockend.com/Kalashin1/Hero-Todos/todos')
   console.log(data)
   return ( 
     <TaskList>
